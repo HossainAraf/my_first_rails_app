@@ -23,3 +23,11 @@
 #   # Report violations without enforcing the policy.
 #   # config.content_security_policy_report_only = true
 # end
+
+# config/initializers/content_security_policy.rb
+
+Rails.application.config.content_security_policy do |policy|
+  policy.default_src :self
+  policy.script_src :self, "https://example.com"
+  # Add other directives as needed
+end
