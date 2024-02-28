@@ -65,3 +65,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+# Use React with Rails
+gem 'react-rails', '~> 2.7'
